@@ -15,7 +15,7 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Blog: "/"
-  Author's home: ""
+#  Author's home: ""
 
 # --- Logo --- #
 
