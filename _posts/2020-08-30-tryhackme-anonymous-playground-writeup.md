@@ -307,7 +307,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 Now, see that wildcard at the end? That's bad. A quick google search for "wildcard crontab privesc" reaveals why - tar allows user to execute commands (in this case as root) if provided with certain flags. And due to the way the wildcard is interpreted, we can prodide these flags as file names. So what we are going to do is:
 
 1) create a script (let's call it `not_a_shell.sh`) which creates a reverse shell to our box
-2) exploit the checkpoint argument (for more info, `man tar` or [https://gtfobins.github.io/gtfobins/tar/]()) to set up the action and run it
+2) exploit the checkpoint argument (for more info, `man tar` or [https://gtfobins.github.io/gtfobins/tar/](https://gtfobins.github.io/gtfobins/tar/)) to set up the action and run it
 
 In this case our action is going to be running our `not_a_shell.sh` script. Putting it all together, let's move into `/home/spooky` and:
 
