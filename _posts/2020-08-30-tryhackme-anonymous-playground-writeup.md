@@ -107,7 +107,7 @@ That "access" cookie looks interesting...wondering what happens if we change its
 
 ![Granted](/assets/img/anonymousplayground_granted.png){: .mx-auto.d-block :}
 
-Great! It looks like this is some sort of username and passowrd combination, encrypted of course. So assuming the part before the "::" is the username, we can look back and search for a 10 characters username in the list we had before. However, nothing is 10 characters from what I could see. My second guess is that each 2 char is equivalent to one letter (e.g., hE = a letter, zA = another letter etc...), so we are looking for a 5 characters username, and if you notice the second couple and the last couple are the same character. It looks like only one username matches this condition, which is `magna`. Finding the password is just a matter of patience. 
+Great! It looks like this is some sort of username and password combination, encrypted of course. So assuming the part before the "::" is the username, we can look back and search for a 10 characters username in the list we had before. However, nothing is 10 characters from what I could see. My second guess is that each 2 char is equivalent to one letter (e.g., hE = a letter, zA = another letter etc...), so we are looking for a 5 characters username, and if you notice the second couple and the last couple are the same character. It looks like only one username matches this condition, which is `magna`. Finding the password is just a matter of patience. 
 
 Now, the quickest way to see if this is a valid user is to try and SSH into the box with the new credentials:
 
